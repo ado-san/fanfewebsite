@@ -1,0 +1,179 @@
+/* MAIN */
+
+body {
+  font-family: sans-serif;
+  margin: auto;
+  max-width: 1280px;
+}
+
+ul li {
+  list-style: none;
+}
+
+span {
+  font-family: cursive;
+  color: white;
+  animation: blink 1s linear infinite;
+}
+
+footer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 60px;
+}
+
+/* CLASSES */
+
+.navbar {
+  background-color: #ff1493;
+  border-radius: 2px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.navbar a.active {
+  text-decoration: underline;
+  background-color: blueviolet;
+}
+
+.navbar a img {
+  width: 30px;
+  height: 30px;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  perspective: 400px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: -100px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear;
+}
+
+.title {
+  text-align: center;
+}
+
+.card-block {
+  width: 200px;
+  color: #7cfc00;
+  background-color: #ff1493;
+}
+
+.card-block2 {
+  width: 400px;
+  color: #7cfc00;
+  background-color: #ff1493;
+}
+
+.card-block3 {
+  width: 100%;
+  color: #7cfc00;
+  background-color: #ff1493;
+}
+
+.card-img-top {
+
+  width: 200px;
+  height: 200px;
+}
+
+.card-img-top2 {
+
+  width: 400px;
+  height: 200px;
+}
+
+.blink {
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+}
+
+.counter{
+  background-color: aqua;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  padding: 10px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.counter span {
+  color: #ff1493;
+}
+
+ /* ANIMATIONS */
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg) translateZ(0);
+  }
+
+  100% {
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 440px) {
+  img, iframe {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+  }
+  .navbar li {
+    display: block;
+  }
+}
